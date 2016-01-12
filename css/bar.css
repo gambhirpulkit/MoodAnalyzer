@@ -1,0 +1,94 @@
+body {
+  background-color: #2b2b2b;
+  font-family: "Arial", san-serif;
+}
+
+.charts-container {
+  position: relative;
+}
+.charts-container .bar-chart--label {
+  float: left;
+  width: 50px;
+  padding-bottom: 6px;
+}
+.charts-container .bar-chart-horizontal {
+  padding-left: 50px;
+  padding-top: 6px;
+}
+.charts-container .bar-chart-horizontal .bar-chart--track {
+  background-color: #2b2b2bw;
+  height: 7px;
+  width: auto;
+  margin-left: 50px;
+}
+.charts-container .bar-chart-horizontal .bar-chart--progress {
+  display: inline-block;
+  position: absolute;
+  height: 7px;
+  background-color: orange;
+  -moz-animation: progressScale-horizontal 1600ms 1 forwards;
+  -webkit-animation: progressScale-horizontal 1600ms 1 forwards;
+  animation: progressScale-horizontal 1600ms 1 forwards;
+}
+.charts-container .bar-chart-vertical {
+  position: relative;
+}
+.charts-container .bar-chart-vertical .bar-chart--track {
+  background-color: black;
+  width: 70px;
+  position: relative;
+}
+.charts-container .bar-chart-vertical .bar-chart--progress {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  width: 70px;
+  background-color: orange;
+  -moz-animation: progressScale-vertical 1600ms 1 forwards;
+  -webkit-animation: progressScale-vertical 1600ms 1 forwards;
+  animation: progressScale-vertical 1600ms 1 forwards;
+}
+
+#chartVertical {
+  height: 300px;
+  width: 350px;
+  background-color: #929292;
+  padding-left: 40px;
+  border-bottom: 1px solid white;
+}
+#chartVertical .bar-chart--track {
+  height: 300px;
+  margin-right: 40px;
+  float: left;
+}
+
+@-moz-keyframes progressScale-horizontal {
+  0% {
+    width: 0;
+  }
+}
+@-webkit-keyframes progressScale-horizontal {
+  0% {
+    width: 0;
+  }
+}
+@keyframes progressScale-horizontal {
+  0% {
+    width: 0;
+  }
+}
+@-moz-keyframes progressScale-vertical {
+  0% {
+    height: 0;
+  }
+}
+@-webkit-keyframes progressScale-vertical {
+  0% {
+    height: 0;
+  }
+}
+@keyframes progressScale-vertical {
+  0% {
+    height: 0;
+  }
+}

@@ -1,0 +1,2 @@
+$('.value').html($('input').val())
+

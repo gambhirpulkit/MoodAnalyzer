@@ -1129,7 +1129,6 @@ guilty	-3
 gullibility	-2
 gullible	-2
 gun	-1
-ha	2
 hacked	-1
 haha	3
 hahaha	3
